@@ -9,6 +9,7 @@ export default function Header() {
         <NavLink to="/" className="header-nav-link">Home</NavLink>
         <NavLink to="/characters" className="header-nav-link">Characters</NavLink>
         <NavLink to="/locations" className="header-nav-link">Locations</NavLink>
+        <NavLink to="/episodes" className="header-nav-link">Episodes</NavLink>
       </div>
     </header>
   );
