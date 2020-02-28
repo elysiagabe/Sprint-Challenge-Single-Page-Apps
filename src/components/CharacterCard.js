@@ -1,19 +1,18 @@
 import React from "react";
+import { Col, Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 
 export default function CharacterCard(props) {
   console.log("CharacterCard props:", props)
 
   return (
-    <section key={props.id}>
-      <img src={props.imgSrc} alt="rick and morty character" />
-      <h3>Name: {props.name}</h3>
-      {/* <p>Status: {props.status}</p>
-      <p>Species: {props.species}</p>
-      <p>Gender: {props.gender}</p>
-      <p>Maybe Origin: {props.origin}</p>
-      <p>Maybe Current Location: {props.location}</p> */}
-
-  <p>{props.name} is a {props.gender} {props.species} originally from {props.origin}. They are currently {props.status.toLowerCase()} and residing on/in {props.location}.</p>
-    </section>
+    <Col xs="6" md="4">
+      <Card key={props.id}>
+        <CardImg top width="100%" src={props.imgSrc} alt={props.name}/>
+        <CardBody>
+          <CardTitle>Name: {props.name}</CardTitle>
+          <CardText>{props.name} is a {props.gender} {props.species} originally from {props.origin}. They are currently {props.status.toLowerCase()} and residing on/in {props.location}.</CardText>
+        </CardBody>
+      </Card>
+    </Col>
   );
 }

@@ -8,6 +8,7 @@ export default function App() {
   return (
     <main>
       <Header />
+      
       <Route exact path="/">
         <WelcomePage />
       </Route>
