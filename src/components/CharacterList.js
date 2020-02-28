@@ -11,6 +11,7 @@ export default function CharacterList() {
   // Set query data later
   const [searchTerm, setSearchTerm] = useState("");
 
+
   useEffect(() => {
     // TODO: Add API Request here - must run in `useEffect`
     //  Important: verify the 2nd `useEffect` parameter: the dependancies array!

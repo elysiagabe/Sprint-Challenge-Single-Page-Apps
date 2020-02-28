@@ -3,7 +3,6 @@ import {
   Col, 
   Card, 
   CardImg, 
-  CardText, 
   CardBody, 
   CardTitle, 
   Button,
@@ -13,7 +12,7 @@ import {
 } from 'reactstrap';
 
 export default function CharacterCard(props) {
-  console.log("CharacterCard props:", props)
+  //console.log("CharacterCard props:", props)
 
   const {
     buttonLabel,
@@ -37,7 +36,6 @@ export default function CharacterCard(props) {
                 {props.name} is a {props.gender} {props.species} originally from {props.origin}. They are currently {props.status.toLowerCase()} and residing on/in {props.location}.
               </ModalBody>
             </Modal>
-          <CardText></CardText>
         </CardBody>
       </Card>
     </Col>
