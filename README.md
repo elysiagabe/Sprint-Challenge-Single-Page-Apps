@@ -27,7 +27,18 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ]  Explain benefit(s) using `client-side routing`?
 
-> Answer:
+> Answer: 
+
+    Routing is the way we navigate through websites and web applications. There are two main types of routing: server-side and client-side. By default, the browser uses server-side routing. This means that when a user clicks a button or link, they’re requesting information from a server. The URL changes to match their request, and the server finds a template or HTML file, which it then sends back to the user. 
+
+    Client-side routing, on the other hand, happens when routing is handled internally by JavaScript. When a user clicks a button or link, JavaScript prevents the client from asking for that via a URL and instead gets the resource (state) that’s already available and renders it to the screen.
+
+    The biggest benefit of client-side routing is that less data is being processed per request, so routing between views tends to be much faster. On the flip side, the initial loading takes longer than server-side routing as the whole site or app needs to load. 
+
+    It’s also typically cheaper to host sites that use client-side routing since they require less server resources. 
+
+    Another benefit is that it’s easier to implement animations, transformations, transitions and other rich user interactions than it is with server-side routing. 
+
 
 ## Project Set Up
 
